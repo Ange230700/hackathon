@@ -1,17 +1,47 @@
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { ToastContainer, toast } from "react-toastify";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import "react-toastify/dist/ReactToastify.css";
 import Logo from "../components/Logo";
 import Basket from "../components/Basket";
 
 function Look3() {
   const [basketAmount, setBasketAmount] = useState(0);
+  const [showModal, setShowModal] = useState(false);
 
   function handleClick1() {
     setBasketAmount(11.17);
   }
+
   function handleClick2() {
     setBasketAmount(21.67);
   }
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
+  const sendByEmail = () => {
+    toast.success("Look envoyé par email avec succès !", {
+      position: "top-right",
+      autoClose: 3000, // Ferme le toast après 3000 millisecondes (3 secondes)
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
+    // Fermer la modale après l'envoi
+    closeModal();
+  };
+
   return (
     <div className="looks">
       <Logo />
@@ -32,7 +62,17 @@ function Look3() {
           src="../src/assets/images/look_3.jpg"
           alt="look_2"
         />
-        <div className="cta_button">
+        <div
+          className="cta_button"
+          role="button"
+          tabIndex="0"
+          onClick={openModal}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === "Space") {
+              openModal();
+            }
+          }}
+        >
           <p>Envoyer ce look par email</p>
         </div>
       </div>
@@ -41,6 +81,20 @@ function Look3() {
         <span className="dot" />
         <span className="dot dotActive" />
       </div>
+
+      {showModal && (
+        <div className="modal">
+          <p>Êtes-vous sûr de vouloir envoyer ce look par email ?</p>
+          <button type="button" onClick={sendByEmail}>
+            Confirmer
+          </button>
+          <button type="button" onClick={closeModal}>
+            Annuler
+          </button>
+        </div>
+      )}
+
+      <ToastContainer />
 
       <h3>ARTICLES DU LOOK</h3>
       <div className="productDiv">
