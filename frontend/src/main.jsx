@@ -12,8 +12,8 @@ import Look2 from "./pages/Look2";
 import Look3 from "./pages/Look3";
 import Routine from "./pages/Routine";
 import Panier from "./pages/Panier";
+import Home from "./pages/Home";
 import "./sass/index.scss";
-
 
 const router = createBrowserRouter([
   {
@@ -22,6 +22,10 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
+        element: <Home />,
+      },
+      {
+        path: "/form1",
         element: <Form1 />,
       },
       {
