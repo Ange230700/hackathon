@@ -15,7 +15,7 @@ function Panier() {
             <img src="../src/assets/images/search.png" alt="search" />
           </div>
           <div className="shopping">
-            <img src="../src/assets/images/shopping.png" alt="panier" />
+            <img src="../src/assets/images/shopping2.png" alt="panier" />
           </div>
           <div className="burger-menu">
             <div className="menu"></div>
@@ -66,7 +66,7 @@ function Panier() {
         </div>
         <div className="items-name-price">
           <div className="items-name">
-            <p>Business Suffer</p>
+            <p>Way Find</p>
           </div>
           <div className="items-price">
             <p>11.17€</p>

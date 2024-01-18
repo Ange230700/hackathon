@@ -7,6 +7,11 @@
   font-family: var(--font-family-2);
 
   .Main {
+    margin-top: clamp(
+      calc(20px * 1),
+      calc(4.7vw * 1),
+      calc(20px * 1 * var(--grossissement))
+    );
     flex: 1;
     padding-bottom: clamp(
       calc(16px * 1),
@@ -178,6 +183,7 @@
         font-family: var(--font-family-1);
         letter-spacing: 2px;
         text-align: center;
+        text-decoration: none;
       }
     }
   }

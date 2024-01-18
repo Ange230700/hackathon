@@ -1,0 +1,141 @@
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(
+    calc(10px * 8),
+    calc(2.35vw * 8),
+    calc(10px * 8 * var(--grossissement))
+  );
+
+  .Looks {
+    margin-top: clamp(
+      calc(20px * 1),
+      calc(4.7vw * 1),
+      calc(20px * 1 * var(--grossissement))
+    );
+    flex: 1;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+
+    .Wrapper {
+      align-self: stretch;
+      height: clamp(
+        calc(503px * 1),
+        calc(118.2vw * 1),
+        calc(503px * 1 * var(--grossissement))
+      );
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(
+        calc(10px * 1),
+        calc(2.35vw * 1),
+        calc(10px * 1 * var(--grossissement))
+      );
+      display: flex;
+
+      .Container {
+        align-self: stretch;
+        height: clamp(
+          calc(43px * 1),
+          calc(10.1vw * 1),
+          calc(43px * 1 * var(--grossissement))
+        );
+        padding: clamp(
+          calc(10px * 1),
+          calc(2.35vw * 1),
+          calc(10px * 1 * var(--grossissement))
+        );
+        background: black;
+        align-items: center;
+        display: flex;
+        color: white;
+        font-size: clamp(
+          calc(20px * 1),
+          calc(4.7vw * 1),
+          calc(20px * 1 * var(--grossissement))
+        );
+        font-weight: 600;
+      }
+
+      .Container2 {
+        align-self: stretch;
+        height: clamp(
+          calc(450px * 1),
+          calc(105.9vw * 1),
+          calc(450px * 1 * var(--grossissement))
+        );
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+
+        .LooksContainer {
+          align-self: stretch;
+          padding: clamp(
+            calc(10px * 1),
+            calc(2.35vw * 1),
+            calc(10px * 1 * var(--grossissement))
+          );
+          justify-content: space-between;
+          align-items: center;
+          display: flex;
+
+          img {
+            width: clamp(
+              calc(116px * 1),
+              calc(27.3vw * 1),
+              calc(116px * 1 * var(--grossissement))
+            );
+            height: clamp(
+              calc(159px * 1),
+              calc(37.4vw * 1),
+              calc(159px * 1 * var(--grossissement))
+            );
+            border-radius: clamp(
+              calc(10px * 1),
+              calc(2.35vw * 1),
+              calc(10px * 1 * var(--grossissement))
+            );
+            object-fit: cover;
+          }
+        }
+
+        .Button {
+          width: clamp(
+            calc(360px * 1),
+            calc(84.7vw * 1),
+            calc(360px * 1 * var(--grossissement))
+          );
+          height: clamp(
+            calc(60px * 1),
+            calc(14.1vw * 1),
+            calc(60px * 1 * var(--grossissement))
+          );
+          padding: clamp(
+            calc(10px * 1),
+            calc(2.35vw * 1),
+            calc(10px * 1 * var(--grossissement))
+          );
+          background: black;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          color: white;
+          font-size: clamp(
+            calc(20px * 1),
+            calc(4.7vw * 1),
+            calc(20px * 1 * var(--grossissement))
+          );
+          font-weight: 700;
+          letter-spacing: 2px;
+          text-align: center;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
