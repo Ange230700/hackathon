@@ -1,13 +1,10 @@
+import Logo from "../components/Logo";
+
 function Look2() {
   return (
     <div className="looks">
-      <div className="logoDiv">
-        <img
-          className="logoImg"
-          src="../src/assets/images/loreal_logo.png"
-          alt="loreal_logo"
-        />
-      </div>
+      <Logo />
+
       <h2>Look n°2</h2>
       <div className="lookImgDiv">
         <img
