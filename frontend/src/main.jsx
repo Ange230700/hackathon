@@ -9,7 +9,7 @@ import "./sass/index.scss";
 import Image1 from "./pages/Image1";
 import Image2 from "./pages/Image2";
 import Image3 from "./pages/Image3";
-// import Looks from "./pages/Looks";
+import Looks from "./pages/Looks";
 // import Look1 from "./pages/Look1";
 // import Look2 from "./pages/Look2";
 // import Look3 from "./pages/Look3";
@@ -45,10 +45,10 @@ const router = createBrowserRouter([
         path: "/image3",
         element: <Image3 />,
       },
-      // {
-      //   path: "/looks",
-      //   element: <Looks />,
-      // },
+      {
+        path: "/looks",
+        element: <Looks />,
+      },
       // {
       //   path: "/look/1",
       //   element: <Look1 />,
