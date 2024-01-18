@@ -14,6 +14,7 @@ import Routine from "./pages/Routine";
 import Panier from "./pages/Panier";
 import "./sass/index.scss";
 
+
 const router = createBrowserRouter([
   {
     path: "/",

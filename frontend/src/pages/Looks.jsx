@@ -1,5 +1,9 @@
 function Looks() {
-  return <div />;
+  return (
+    <div>
+      <p>Coucou</p>
+    </div>
+  );
 }
 
 export default Looks;

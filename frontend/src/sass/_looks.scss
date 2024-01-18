@@ -4,6 +4,22 @@
   align-items: center;
   gap: 15px;
 
+  .subHeader {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 40px;
+      height: 40px;
+      opacity: 20%;
+    }
+    .hidden {
+      opacity: 0%;
+    }
+  }
+
   .lookImgDiv {
     display: flex;
     flex-direction: column;
