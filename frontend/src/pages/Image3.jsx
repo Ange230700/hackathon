@@ -24,7 +24,7 @@ function Image3() {
 
   useEffect(() => {
     if (animationCompleted) {
-      navigate("/look/3"); // Remplacez '/page-suivante' par le chemin réel de votre page suivante
+      navigate("/looks"); // Remplacez '/page-suivante' par le chemin réel de votre page suivante
     }
   }, [animationCompleted, navigate]);
 

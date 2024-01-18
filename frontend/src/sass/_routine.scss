@@ -6,10 +6,22 @@
     p {
       text-align: center;
       padding: 8px;
+      font-family: var(--font-family-2);
     }
     margin-top: 2em;
     background-color: black;
     color: white;
+  }
+  .return-button {
+    padding: 10px;
+
+    button {
+      border: none;
+      background-color: #e32847;
+      color: white;
+      padding: 5px 12px;
+      font-family: var(--font-family-1);
+    }
   }
   .products-container {
     .productDiv {
@@ -38,12 +50,14 @@
         .productName {
           font-size: 1.3rem;
           margin: 10px;
+          font-family: var(--font-family-3);
         }
         .productPrice {
           font-size: 1.1rem;
           margin: 10px;
           font-weight: bold;
           color: #e32847;
+          font-family: var(--font-family-3);
         }
       }
       .addToBasket {
@@ -60,6 +74,7 @@
           color: white;
           font-weight: bold;
           font-size: 1.1rem;
+          font-family: var(--font-family-1);
         }
       }
     }
