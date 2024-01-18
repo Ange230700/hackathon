@@ -1,9 +1,10 @@
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Logo from "../components/Logo";
 import Basket from "../components/Basket";
 
 function Routine() {
-  const [basketAmount] = useState(28.11);
+  const [basketAmount] = useState(21.67);
 
   return (
     <>
@@ -12,6 +13,12 @@ function Routine() {
         <div className="header-routine">
           <p>Votre routine soin sur-mesure</p>
         </div>
+        <NavLink to="/looks">
+          <div className="return-button">
+            <button type="button">Retourner aux looks</button>
+          </div>
+        </NavLink>
+
         <div className="products-container">
           <div className="productDiv">
             <div className="productInfo">
@@ -52,7 +59,7 @@ function Routine() {
         </div>
       </div>
 
-      <Basket basketAmount={basketAmount} />
+      <Basket basketAmount={basketAmount} link="/panier" />
     </>
   );
 }

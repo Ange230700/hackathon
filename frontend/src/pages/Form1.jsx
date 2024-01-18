@@ -120,9 +120,15 @@ function Form1() {
               <div className="Input2">
                 <select name="age" id="age" className="Input2">
                   <option value="0">Age</option>
-                  <option value="1">18</option>
-                  <option value="2">19</option>
-                  <option value="3">20</option>
+                  <option value="1">18-25</option>
+                  <option value="2">26-30</option>
+                  <option value="3">30-34</option>
+                  <option value="1">35-39</option>
+                  <option value="2">40-44</option>
+                  <option value="3">45-49</option>
+                  <option value="1">50-54</option>
+                  <option value="2">55-59</option>
+                  <option value="3">60+</option>
                 </select>
               </div>
             </div>

@@ -3,9 +3,30 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  overflow-y: hidden;
   .heroImageDiv {
     .heroImage {
       width: 100%;
+      opacity: 95%;
+      animation-name: example;
+      animation-duration: 5s;
     }
+    @keyframes example {
+      0% {
+        opacity: 70%;
+      }
+      100% {
+        opacity: 100%;
+      }
+    }
+  }
+  .CTA_button {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    color: white;
+    background-color: #000000;
+    font-size: 2rem;
+    padding: 15px;
   }
 }

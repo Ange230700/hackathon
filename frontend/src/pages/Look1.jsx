@@ -47,7 +47,7 @@ function Look1() {
             />
           </div>
           <div className="productDetailsDiv">
-            <p className="productName">Sérum teinté Accord Parfait</p>
+            <p className="productName">Sérum teinté Allow Exactly</p>
             <p className="productPrice">13.12€</p>
           </div>
         </div>
@@ -65,7 +65,7 @@ function Look1() {
             />
           </div>
           <div className="productDetailsDiv">
-            <p className="productName">Poudre Accord Parfait</p>
+            <p className="productName">Poudre Allow Exactly</p>
             <p className="productPrice">11.99€</p>
           </div>
         </div>
@@ -83,7 +83,7 @@ function Look1() {
             />
           </div>
           <div className="productDetailsDiv">
-            <p className="productName">Color Queen Ombre à Paupière</p>
+            <p className="productName">Majority Fly Ombre à Paupière</p>
             <p className="productPrice">9.10€</p>
           </div>
         </div>

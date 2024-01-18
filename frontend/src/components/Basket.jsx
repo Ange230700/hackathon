@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
-function Basket({ basketAmount }) {
+function Basket({ basketAmount, link }) {
   return (
     <div className="basket_bar">
       <div>
-        <NavLink to="/panier">
+        <NavLink to={link}>
           <p>CONTINUER</p>{" "}
         </NavLink>
       </div>
@@ -23,6 +23,7 @@ function Basket({ basketAmount }) {
 
 Basket.propTypes = {
   basketAmount: PropTypes.number.isRequired,
+  link: PropTypes.string.isRequired,
 };
 
 export default Basket;
