@@ -1,10 +1,10 @@
-// import Logo from "../components/Logo";
 import { NavLink } from "react-router-dom";
+import Logo from "../components/Logo";
 
 function Form1() {
   return (
     <main className="PageFormulaire">
-      {/* <Logo /> */}
+      <Logo />
       <section className="Main">
         <div className="TitleContainer">
           <p>Votre relooking total en 5 minutes</p>
