@@ -4,13 +4,17 @@ function Look3() {
       <div className="logoDiv">
         <img
           className="logoImg"
-          src="../src/assets/loreal_logo.png"
+          src="../src/assets/images/loreal_logo.png"
           alt="loreal_logo"
         />
       </div>
       <h2>Look n°2</h2>
       <div className="lookImgDiv">
-        <img className="lookImg" src="../src/assets/look_3.jpg" alt="look_2" />
+        <img
+          className="lookImg"
+          src="../src/assets/images/look_3.jpg"
+          alt="look_2"
+        />
         <div className="cta_button">
           <p>Ajouter ce look au panier</p>
         </div>
@@ -27,7 +31,7 @@ function Look3() {
           <div className="productImageDiv">
             <img
               className="productImg"
-              src="../src/assets/fond_de_teint.jpg"
+              src="../src/assets/images/fond_de_teint.jpg"
               alt="fond_de_teint"
             />
           </div>
@@ -45,7 +49,7 @@ function Look3() {
           <div className="productImageDiv">
             <img
               className="productImg"
-              src="../src/assets/poudre.jpg"
+              src="../src/assets/images/poudre.jpg"
               alt="fond_de_teint"
             />
           </div>
@@ -63,7 +67,7 @@ function Look3() {
           <div className="productImageDiv">
             <img
               className="productImg"
-              src="../src/assets/fard.jpg"
+              src="../src/assets/images/fard.jpg"
               alt="ombre_a_paupieres"
             />
           </div>
