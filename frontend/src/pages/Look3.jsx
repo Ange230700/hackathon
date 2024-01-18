@@ -188,7 +188,7 @@ function Look3() {
         </button>
       </div>
 
-      <Basket basketAmount={basketAmount} />
+      <Basket basketAmount={basketAmount} link="/routine" />
     </div>
   );
 }
