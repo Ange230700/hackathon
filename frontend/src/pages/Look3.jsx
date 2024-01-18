@@ -102,12 +102,30 @@ function Look3() {
           <div className="productImageDiv">
             <img
               className="productImg"
+              src="../src/assets/images/coloration.jpg"
+              alt="coloration cheveux"
+            />
+          </div>
+          <div className="productDetailsDiv">
+            <p className="productName">Coloration Study Design Noir Ebène</p>
+            <p className="productPrice">10.80€</p>
+          </div>
+        </div>
+        <button type="button" className="addToBasket" onClick={handleClick2}>
+          <p>AJOUTER AU PANIER</p>
+        </button>
+      </div>
+      <div className="productDiv">
+        <div className="productInfo">
+          <div className="productImageDiv">
+            <img
+              className="productImg"
               src="../src/assets/images/fond_de_teint.jpg"
               alt="fond_de_teint"
             />
           </div>
           <div className="productDetailsDiv">
-            <p className="productName">Sérum teinté Accord Parfait</p>
+            <p className="productName">Sérum teinté Allow Exactly</p>
             <p className="productPrice">13.12€</p>
           </div>
         </div>
@@ -125,7 +143,7 @@ function Look3() {
             />
           </div>
           <div className="productDetailsDiv">
-            <p className="productName">Way Find</p>
+            <p className="productName">Poudre Allow Exactly</p>
             <p className="productPrice">11.17€</p>
           </div>
         </div>
@@ -139,11 +157,11 @@ function Look3() {
             <img
               className="productImg"
               src="../src/assets/images/blush.jpg"
-              alt="fond_de_teint"
+              alt="blush"
             />
           </div>
           <div className="productDetailsDiv">
-            <p className="productName">Blush Accord Parfait</p>
+            <p className="productName">Blush Allow Exactly</p>
             <p className="productPrice">13.40€</p>
           </div>
         </div>
@@ -157,7 +175,7 @@ function Look3() {
             <img
               className="productImg"
               src="../src/assets/images/rouge.jpg"
-              alt="ombre_a_paupieres"
+              alt="rouge à lèvres"
             />
           </div>
           <div className="productDetailsDiv">
@@ -169,6 +187,7 @@ function Look3() {
           <p>AJOUTER AU PANIER</p>
         </button>
       </div>
+
       <Basket basketAmount={basketAmount} />
     </div>
   );

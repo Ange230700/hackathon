@@ -59,7 +59,9 @@ main {
         );
         font-weight: 600;
       }
-
+      .VosLooksPersonnalisS {
+        font-family: var(--font-family-2);
+      }
       .Container2 {
         align-self: stretch;
         height: clamp(
@@ -104,6 +106,7 @@ main {
         }
 
         .Button {
+          font-family: var(--font-family-1);
           width: clamp(
             calc(360px * 1),
             calc(84.7vw * 1),
