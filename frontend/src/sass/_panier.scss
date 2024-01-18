@@ -1,0 +1,154 @@
+.panier-page {
+  display: flex;
+  flex-direction: column;
+  .panier-navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .search-shopping {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      object-fit: contain;
+      .searchbar {
+        width: 30%;
+        img {
+          width: 80%;
+        }
+        .shopping {
+          width: 30%;
+          img {
+            width: 80%;
+          }
+        }
+      }
+      .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 4rem;
+        height: 2rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 10;
+
+        .menu {
+          width: 2rem;
+          height: 0.25rem;
+          background: #333; // Change this to suit your needs
+          border-radius: 10px;
+          transition: all 0.3s linear;
+          //   position: relative;
+          transform-origin: 1px;
+        }
+      }
+    }
+  }
+  .panier-title {
+    width: 26.75em;
+    height: 4.68em;
+    flex-shrink: 0;
+    background: #e8e8e8;
+
+    p {
+      color: #000;
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+    }
+  }
+  .panier-card {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    padding: 15px 0;
+    margin-top: 10px;
+
+    .items-image {
+      display: flex;
+      justify-content: flex-start;
+      width: 6em;
+
+      .imgItems {
+        width: 90%;
+      }
+    }
+    .items-name-price {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 8em;
+
+      .items-price {
+        p {
+          color: red;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .quantity-container {
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+
+      .quantity {
+        border: 1px solid #d9d9d9;
+
+        p {
+          text-align: center;
+          margin: 5px 16px;
+        }
+      }
+      .delete {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        .delete-par {
+          color: red;
+          border: none;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .payment-container {
+    display: flex;
+    margin-top: 2em;
+    flex-direction: column;
+    background-color: #e8e8e8;
+    height: 48vh;
+
+    .total {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 12px;
+      p {
+        padding: 8px;
+      }
+    }
+    .payment-button {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      button {
+        border: none;
+        width: 26.75em;
+        height: 4.68em;
+        flex-shrink: 0;
+        background: #000;
+        color: white;
+      }
+    }
+  }
+}

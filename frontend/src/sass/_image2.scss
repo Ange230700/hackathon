@@ -1,0 +1,45 @@
+.Iphone14Plus4 {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Rend l'élément initialement invisible */
+  transition: opacity 0.5s ease; /* Ajoute une transition pour rendre l'animation plus douce */
+  overflow: hidden;
+
+  .GlobalWomenBeautyStandardsEstherHonig22 {
+    width: 428px;
+    height: 700px;
+    position: absolute;
+    object-fit: cover;
+  }
+
+  .Rectangle14 {
+    width: 360px;
+    height: 60px;
+    top: 80%;
+    position: absolute;
+    background: black;
+  }
+
+  .EnvoyerCettePhoto {
+    top: 82%;
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+  }
+}
+
+.appearAnimation {
+  opacity: 1; /* L'élément devient visible lorsque la classe appearAnimation est ajoutée */
+  /* Ajoutez d'autres styles ou animations selon vos besoins */
+}
