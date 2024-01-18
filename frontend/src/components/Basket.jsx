@@ -5,7 +5,7 @@ function Basket({ basketAmount }) {
   return (
     <div className="basket_bar">
       <div>
-        <NavLink to="/panier">
+        <NavLink to="/routine">
           <p>VOIR MON PANIER</p>{" "}
         </NavLink>
       </div>
