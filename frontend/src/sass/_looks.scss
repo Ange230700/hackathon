@@ -1,0 +1,98 @@
+.looks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  .lookImgDiv {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+    align-items: center;
+
+    .lookImg {
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .cta_button {
+      width: 350px;
+      background-color: black;
+      border-radius: 0 0 15px 15px;
+
+      p {
+        color: white;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .dotDiv {
+    display: flex;
+    gap: 10px;
+
+    .dot {
+      height: 20px;
+      width: 20px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .dotActive {
+      height: 20px;
+      width: 20px;
+      background-color: #000000;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+
+  .productDiv {
+    .productInfo {
+      width: 370px;
+      display: flex;
+      border: 1px solid #e32847;
+      border-radius: 15px 15px 0 0;
+
+      .productImg {
+        width: 170px;
+        border-radius: 30px;
+      }
+    }
+
+    .productDetailsDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .productName {
+        font-size: 1.3rem;
+        margin: 10px;
+      }
+      .productPrice {
+        font-size: 1.1rem;
+        margin: 10px;
+        font-weight: bold;
+        color: #e32847;
+      }
+    }
+    .addToBasket {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 370px;
+      height: 50px;
+      background-color: #e32847;
+      border: 1px solid #e32847;
+      border-radius: 0 0 15px 15px;
+
+      p {
+        color: white;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
