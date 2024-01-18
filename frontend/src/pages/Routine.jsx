@@ -59,7 +59,7 @@ function Routine() {
         </div>
       </div>
 
-      <Basket basketAmount={basketAmount} />
+      <Basket basketAmount={basketAmount} link="/panier" />
     </>
   );
 }
