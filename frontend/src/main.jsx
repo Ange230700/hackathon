@@ -3,8 +3,6 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Form1 from "./pages/Form1";
-import Form2 from "./pages/Form2";
-import Photo from "./pages/Photo";
 import Image1 from "./pages/Image1";
 import Image2 from "./pages/Image2";
 import Image3 from "./pages/Image3";
@@ -24,14 +22,6 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Form1 />,
-      },
-      {
-        path: "/form2",
-        element: <Form2 />,
-      },
-      {
-        path: "/photo",
-        element: <Photo />,
       },
       {
         path: "/image1",
