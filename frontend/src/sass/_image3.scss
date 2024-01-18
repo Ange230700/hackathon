@@ -3,21 +3,22 @@
   height: 100vh;
   position: relative;
   background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 
   .GlobalWomenBeautyStandardsEstherHonig23 {
-    margin-top: 7vh;
-    width: 100%;
-    height: 75%;
+    width: 428px;
+    height: 700px;
     position: absolute;
   }
 
   .loader {
-    display: block;
     position: relative;
     border-radius: 10px;
-    top: 90%;
-    left: 5vw;
+    top: 43%;
     height: 20px;
     width: 90vw;
     background: #fff;

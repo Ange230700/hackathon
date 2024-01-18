@@ -3,29 +3,30 @@
   height: 100vh;
   position: relative;
   background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   opacity: 0; /* Rend l'élément initialement invisible */
   transition: opacity 0.5s ease; /* Ajoute une transition pour rendre l'animation plus douce */
   overflow: hidden;
 
   .GlobalWomenBeautyStandardsEstherHonig22 {
-    margin-top: 7vh;
-    width: 100%;
-    height: 75%;
+    width: 428px;
+    height: 700px;
     position: absolute;
   }
 
   .Rectangle14 {
     width: 360px;
     height: 60px;
-    left: 34px;
-    top: 663px;
+    top: 80%;
     position: absolute;
     background: black;
   }
 
   .EnvoyerCettePhoto {
-    left: 85px;
-    top: 681px;
+    top: 82%;
     position: absolute;
     color: white;
     text-decoration: none;
