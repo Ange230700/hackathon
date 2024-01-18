@@ -37,7 +37,7 @@ function Panier() {
         </div>
         <div className="items-name-price">
           <div className="items-name">
-            <p>Business Suffer</p>
+            <p>Business Suffer Rouge à lèvres</p>
           </div>
           <div className="items-price">
             <p>10.50€</p>
@@ -66,7 +66,7 @@ function Panier() {
         </div>
         <div className="items-name-price">
           <div className="items-name">
-            <p>Way Find</p>
+            <p>Poudre Allow Exactly</p>
           </div>
           <div className="items-price">
             <p>11.17€</p>
