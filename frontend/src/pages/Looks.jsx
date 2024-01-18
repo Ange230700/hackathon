@@ -13,8 +13,8 @@ function Looks() {
 
     if (progress < 100) {
       timer = setTimeout(() => {
-        setProgress(progress + 5);
-      }, 50);
+        setProgress(progress + 1);
+      }, 100);
       setAnimationStart(true);
     } else {
       setLoading(false);
