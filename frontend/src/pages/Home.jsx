@@ -12,7 +12,7 @@ function Home() {
           src="../src/assets/images/hero.png"
         />
         <NavLink to="/form1">
-          <div className="CTA_button">Exclusive Makeover</div>
+          <div className="CTA_button"> Exclusive Makeover &#8250;&#8250;</div>
         </NavLink>
       </div>
     </div>
