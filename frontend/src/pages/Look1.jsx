@@ -1,11 +1,25 @@
+import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import Logo from "../components/Logo";
+import Basket from "../components/Basket";
 
 function Look1() {
+  const [basketAmount] = useState(0);
+
   return (
     <div className="looks">
       <Logo />
-
-      <h2>Look n°2</h2>
+      <div className="subHeader">
+        <img
+          src="../src/assets/images/fleche-gauche.png"
+          alt="previous"
+          className="hidden"
+        />
+        <h2>Look n°1</h2>
+        <NavLink to="/look/2">
+          <img src="../src/assets/images/fleche-droite.png" alt="next" />
+        </NavLink>
+      </div>
       <div className="lookImgDiv">
         <img
           className="lookImg"
@@ -13,7 +27,7 @@ function Look1() {
           alt="look_2"
         />
         <div className="cta_button">
-          <p>Ajouter ce look au panier</p>
+          <p>Envoyer ce look par email</p>
         </div>
       </div>
       <div className="dotDiv">
@@ -77,6 +91,7 @@ function Look1() {
           <p>AJOUTER AU PANIER</p>
         </div>
       </div>
+      <Basket basketAmount={basketAmount} />
     </div>
   );
 }
