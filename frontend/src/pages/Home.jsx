@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Logo from "../components/Logo";
 
 function Home() {
@@ -10,6 +11,9 @@ function Home() {
           alt="heroImage"
           src="../src/assets/images/hero.png"
         />
+        <NavLink to="/form1">
+          <div className="CTA_button">Exclusive Makeover</div>
+        </NavLink>
       </div>
     </div>
   );

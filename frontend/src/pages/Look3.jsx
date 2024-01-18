@@ -143,7 +143,7 @@ function Look3() {
             />
           </div>
           <div className="productDetailsDiv">
-            <p className="productName"> Fond de teint poudre Way Find</p>
+            <p className="productName">Poudre Allow Exactly</p>
             <p className="productPrice">11.17€</p>
           </div>
         </div>

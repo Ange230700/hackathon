@@ -24,7 +24,7 @@ function Image3() {
 
   useEffect(() => {
     if (animationCompleted) {
-      navigate("/look/3"); // Remplacez '/page-suivante' par le chemin réel de votre page suivante
+      navigate("/looks"); // Remplacez '/page-suivante' par le chemin réel de votre page suivante
     }
   }, [animationCompleted, navigate]);
 
@@ -35,6 +35,11 @@ function Image3() {
         src="./src/assets/images/Original.jpg"
         alt="image3"
       />
+      <div className="ocrloader">
+        <p>Scanning</p>
+        <em />
+        <span />
+      </div>
       <div className="loader" />
     </div>
   );
