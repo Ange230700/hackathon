@@ -81,11 +81,11 @@ function Looks() {
                 <img src="../src/assets/images/look_3.jpg" alt="Look3" />
               </NavLink>
             </div>
+            <NavLink className="Button" to="/look/1">
+              VOIR LES LOOKS EN DÉTAIL
             <div className="messageContainer">
               <p ref={messageRef} />
             </div>
-            <NavLink className="Button" to="/routine">
-              PASSER CETTE ÉTAPE
             </NavLink>
           </div>
         </div>
