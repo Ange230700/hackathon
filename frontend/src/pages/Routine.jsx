@@ -4,7 +4,11 @@ import Logo from "../components/Logo";
 import Basket from "../components/Basket";
 
 function Routine() {
-  const [basketAmount] = useState(21.67);
+  const [basketAmount, setBasketAmount] = useState(21.67);
+
+  function handleClick3() {
+    setBasketAmount(36.66);
+  }
 
   return (
     <>
@@ -52,9 +56,13 @@ function Routine() {
                 <p className="productPrice">14.99€</p>
               </div>
             </div>
-            <div className="addToBasket">
+            <button
+              type="button"
+              className="addToBasket"
+              onClick={handleClick3}
+            >
               <p>AJOUTER AU PANIER</p>
-            </div>
+            </button>
           </div>
         </div>
       </div>
