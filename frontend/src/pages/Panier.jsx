@@ -85,10 +85,39 @@ function Panier() {
           </div>
         </div>
       </div>
+      <div className="panier-card">
+        <div className="items-image">
+          <img
+            className="imgItems"
+            src="../src/assets/images/contouryeux.jpg"
+            alt="business suffer"
+          />
+        </div>
+        <div className="items-name-price">
+          <div className="items-name">
+            <p>Contour des yeux List Rule</p>
+          </div>
+          <div className="items-price">
+            <p>14.99€</p>
+          </div>
+        </div>
+        <div className="quantity-container">
+          <div className="quantity">
+            <p>
+              Quantité <br /> - 1 +
+            </p>
+          </div>
+          <div className="delete">
+            <button type="button" className="delete-par">
+              Supprimer
+            </button>
+          </div>
+        </div>
+      </div>
       <div className="payment-container">
         <div className="total">
           <p>Total</p>
-          <p>21.67€</p>
+          <p>36.66€</p>
         </div>
         <div className="payment-button">
           <button type="button">PAIEMENT SÉCURISÉ</button>
