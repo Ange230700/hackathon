@@ -152,6 +152,31 @@ main {
           }
         }
 
+        .messageContainer {
+          padding: clamp(
+            calc(10px * 1),
+            calc(2.35vw * 1),
+            calc(10px * 1 * var(--grossissement))
+          );
+          margin-top: clamp(
+            calc(20px * 1),
+            calc(4.7vw * 1),
+            calc(20px * 1 * var(--grossissement))
+          );
+          text-align: center;
+          font-size: clamp(
+            calc(18px * 1),
+            calc(4.23vw * 1),
+            calc(18px * 1 * var(--grossissement))
+          );
+          color: #151515;
+
+          p {
+            margin: 0;
+            line-height: 1.5;
+          }
+        }
+
         .Button {
           font-family: var(--font-family-1);
           width: clamp(

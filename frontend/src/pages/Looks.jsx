@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
+import Typed from "typed.js";
 import Logo from "../components/Logo";
 
 function Looks() {
   const [loading, setLoading] = useState(true);
   const [progress, setProgress] = useState(0);
-  const [animationStart, setAnimationStart] = useState(false);
+  const messageRef = useRef(null);
 
   useEffect(() => {
     // Simulate AI processing delay
@@ -15,9 +16,24 @@ function Looks() {
       timer = setTimeout(() => {
         setProgress(progress + 1);
       }, 50);
-      setAnimationStart(true);
-    } else {
+    }
+
+    if (progress === 100) {
       setLoading(false);
+      const options = {
+        strings: [
+          "Vos looks sont prêts ! Choisissez votre préféré entre ces 3 propositions pour voir les produits qui le composent.",
+        ],
+        typeSpeed: 20,
+        backSpeed: 20,
+        loop: false,
+      };
+
+      setTimeout(() => {
+        if (messageRef.current) {
+          new Typed(messageRef.current, options);
+        }
+      }, 2000);
     }
 
     return () => clearTimeout(timer);
@@ -54,11 +70,7 @@ function Looks() {
             <p>Vos looks personnalisés</p>
           </div>
           <div className="Container2">
-            <div
-              className={`LooksContainer ${
-                animationStart ? "startAnimation" : ""
-              }`}
-            >
+            <div className="LooksContainer">
               <NavLink to="/look/1">
                 <img src="../src/assets/images/look_1.jpg" alt="Look1" />
               </NavLink>
@@ -71,6 +83,9 @@ function Looks() {
             </div>
             <NavLink className="Button" to="/look/1">
               VOIR LES LOOKS EN DÉTAIL
+            <div className="messageContainer">
+              <p ref={messageRef} />
+            </div>
             </NavLink>
           </div>
         </div>
