@@ -85,7 +85,7 @@ function Looks() {
               <p ref={messageRef} />
             </div>
             <NavLink className="Button" to="/routine">
-              PASSER CETTE ÉTAPE
+              VOIR LES DETAILS DES LOOKS
             </NavLink>
           </div>
         </div>
