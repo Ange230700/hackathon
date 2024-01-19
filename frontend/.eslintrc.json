@@ -34,6 +34,8 @@
         "assert": "either"
       }
     ],
-    "no-nested-ternary": "off"
+    "no-nested-ternary": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-new": "off"
   }
 }
