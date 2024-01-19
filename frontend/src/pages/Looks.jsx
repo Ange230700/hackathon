@@ -84,8 +84,8 @@ function Looks() {
             <div className="messageContainer">
               <p ref={messageRef} />
             </div>
-            <NavLink className="Button" to="/routine">
-              VOIR LES DETAILS DES LOOKS
+            <NavLink className="Button" to="/look/1">
+              VOIR LES LOOKS EN DÉTAIL
             </NavLink>
           </div>
         </div>
